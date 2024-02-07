@@ -1,0 +1,4 @@
+!/bin/sh
+
+setvtrgb /home/tume/.config/hypr/vt_nord
+tuigreet --cmd 'dbus-run-session Hyprland' -t -g 'Hello there!'

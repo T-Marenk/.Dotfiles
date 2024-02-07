@@ -1,0 +1,4 @@
+#!/bin/bash
+
+kitty nmtui &
+hyprctl dispatch togglefloating title:nmtui

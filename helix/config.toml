@@ -1,0 +1,29 @@
+theme = "catppuccin_mocha"
+
+[editor]
+line-number = "relative"
+cursorline = true
+color-modes = true
+bufferline = "multiple"
+idle-timeout = 0
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+render = true
+
+[editor.statusline]
+left = ["mode", "version-control", "spinner"]
+center = ["file-name", "file-type"]
+right = ["diagnostics", "selections", "position", "file-encoding"]
+
+[keys.normal]
+"ö" = "command_mode"
+"A-." = ":buffer-next"
+"A-," = ":buffer-previous"
+"A-c" = ":buffer-close!"
+"A-C" = ":buffer-close-all!"
+"A-o" = ":new"

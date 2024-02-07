@@ -1,0 +1,14 @@
+[[language]]
+name = "rust"
+
+[language.config.check]
+command = "clippy"
+
+[[language]]
+
+name = "python"
+
+auto-format = true
+
+indent = { tab-width = 4, unit = "    " }
+config = {pylsp={plugins={pycodestyle={enabled=false},flake8={enabled=true,maxLineLength=100},pyflakes={enabled=false}}}}

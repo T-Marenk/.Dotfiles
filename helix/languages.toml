@@ -1,14 +1,14 @@
-[[language]]
-name = "rust"
+# [[language]]
+# name = "rust"
 
-[language.config.check]
-command = "clippy"
+# [language.config.check]
+# command = "clippy"
 
-[[language]]
+# [[language]]
 
-name = "python"
+# name = "python"
 
-auto-format = true
+ # auto-format = true
 
-indent = { tab-width = 4, unit = "    " }
-config = {pylsp={plugins={pycodestyle={enabled=false},flake8={enabled=true,maxLineLength=100},pyflakes={enabled=false}}}}
+ # indent = { tab-width = 4, unit = "    " }
+ # config = {pylsp={plugins={pycodestyle={enabled=false},flake8={enabled=true,maxLineLength=100},pyflakes={enabled=false}}}}

@@ -14,14 +14,15 @@ window#waybar {
 }
 
 #workspaces {
-    margin: 2px 0 0 5px;
+    margin: 0 0 2px 5px;
     background-color: @base;
 }
 
 #window {
-    margin: 2px 0 0 0;
+    margin: 0px 0 2px 0;
     background-color: @base;
-    padding: 2px 10px 0px 10px;
+    color: @text;
+    padding: 2px 10px 2px 10px;
 }
 
 window#waybar.empty #window {
@@ -59,12 +60,12 @@ window#waybar.empty #window {
 #backlight,
 #network,
 #pulseaudio,
-#custom-media,
-#tray,
 #mode,
+#custom-spotify,
 #clock {
-    margin: 2px 0 0 0;
+    margin: 0 0 2px 0;
     padding: 0 10px;
+    color: @text;
     background-color: @base;
 }
 
@@ -79,6 +80,7 @@ window#waybar.empty #window {
 }
 
 #battery {
+    margin: 0 4px 2px 0;
     padding: 0 10px 0 10px;
     background-color: @base;
     color: @sky;
@@ -135,30 +137,7 @@ label:focus {
     color: @red;
 }
 
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-
-#tray {
+#custom-spotify {
     background-color: @base;
-    color: @teal;
-}
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+    color: @mauve;
 }
